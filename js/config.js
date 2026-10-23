@@ -32,7 +32,7 @@ window.SITE = {
    dirección completa de la barra (ej. facebook.com/reel/123...).
    ------------------------------------------------------------ */
 window.PUBLICACIONES = [
-  "https://www.facebook.com/share/r/19nwhEkLJm/"
+  "https://www.facebook.com/reel/3234203100118832/"
 ];
 
 /* ------------------------------------------------------------

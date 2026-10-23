@@ -39,13 +39,13 @@
   function incrustar(url) {
     var esVideo = /\/(reel|videos|watch|share\/[rv])\b/.test(url);
     var vertical = /\/(reel|share\/r)\b/.test(url);
-    var w = vertical ? 340 : 500, h = esVideo ? (vertical ? 600 : 281) : 560;
+    var w = vertical ? 340 : 500, h = esVideo ? (vertical ? 620 : 281) : 560;
     var f = document.createElement("iframe");
     f.title = "Publicación de PueblaDeNoche en Facebook";
     f.width = w; f.height = h; f.loading = "lazy"; f.allowFullscreen = true;
     f.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
     f.src = "https://www.facebook.com/plugins/" + (esVideo ? "video.php" : "post.php") +
-            "?href=" + encodeURIComponent(url) + "&show_text=false&width=" + w;
+            "?href=" + encodeURIComponent(url) + "&show_text=true&width=" + w + (esVideo ? "&height=" + (h - 115) : "") + "&t=0";
     var caja = document.createElement("div"); caja.className = "fb-item"; caja.appendChild(f);
     visor.appendChild(caja);
   }
