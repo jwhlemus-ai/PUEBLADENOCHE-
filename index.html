@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PueblaDeNoche — Noticias y vida nocturna de Puebla</title>
+<meta name="description" content="Medio digital independiente de Puebla, México. Síguenos en Instagram, YouTube y TikTok.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="PueblaDeNoche">
+<meta property="og:description" content="ALL ACCESS">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/avatar-punto-rojo.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#inicio" aria-label="PueblaDeNoche, inicio">
+    <img src="assets/avatar-punto-rojo.png" alt="" width="36" height="36">
+    <span>PueblaDeNoche</span>
+  </a>
+  <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#publicaciones">Publicaciones</a>
+    <a href="#avisos" id="nav-avisos" hidden>Avisos</a>
+    <a href="#redes">Redes</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <img class="portada" src="assets/logo-puebladenoche.png" alt="PueblaDeNoche" width="625" height="72">
+    <p class="lema">ALL ACCESS</p>
+    <div class="cta"><a class="btn btn-red" href="#publicaciones">Ver publicaciones</a></div>
+  </section>
+
+  <section id="publicaciones" class="bloque">
+    <h2>Publicaciones recientes</h2>
+    <div id="fb-visor" class="fb-visor"><p class="cargando">Cargando publicaciones de Facebook…</p></div>
+    <p class="centro"><a class="btn btn-line" data-red="facebook" target="_blank" rel="noopener">Ver página original en Facebook</a></p>
+    <p class="nota centro">Si no ves las publicaciones, tu navegador o bloqueador puede estar impidiendo el contenido de Facebook. Usa el botón de arriba.</p>
+  </section>
+
+  <section id="avisos" class="bloque" hidden>
+    <h2>Avisos y promociones</h2>
+    <div id="banners" class="banners"></div>
+  </section>
+
+  <section id="redes" class="bloque">
+    <h2>Encuéntranos en redes</h2>
+    <div class="redes" id="redes-botones"></div>
+  </section>
+</main>
+
+<footer>
+  <img src="assets/logo-puebladenoche.png" alt="PueblaDeNoche" width="200" height="23">
+  <div class="redes mini" id="redes-pie"></div>
+  <p>© <span id="anio"></span> PueblaDeNoche · Puebla, México</p>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
